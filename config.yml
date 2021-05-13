@@ -1,0 +1,16 @@
+title: RPCXO
+description: rPCXO
+template:
+  repo: rpcxo-template
+  name: rpcxo
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
